@@ -25,7 +25,24 @@
     </style>
   </head>
   <body>
-    <h1>Hola Mundo!</h1>
+    <div class="typer">
+      <label for="sarcastic">
+        <input type="radio" value="sarcastic" id="sarcastic" name="filter" />
+        Sarcastic
+      </label>
+      <label for="funky">
+        <input type="radio" value="funky" id="funky" name="filter" />
+        Funky
+      </label>
+      <label for="unable">
+        <input type="radio" value="unable" id="unable" name="filter" />
+        Unable to Structure a sentence
+      </label>
+      <textarea name="text">
+ so I was thinking about dark series on netflix, but i figured that was tommorrow not today!</textarea
+      >
+      <p class="result"></p>
+    </div>
   </body>
   <script src="./index.js"></script>
 </html>
