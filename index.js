@@ -115,3 +115,9 @@ function transformText(text) {
 }
 
 textArea.addEventListener("input", (e) => transformText(e.target.value));
+
+filterInputs.forEach((input) =>
+  input.addEventListener("input", () => {
+    transformText(textArea.value);
+  })
+);
